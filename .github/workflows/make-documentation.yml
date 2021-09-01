@@ -4,8 +4,10 @@ on:
     branches:
       - main
       - master
-      
-  page_build
+  page_build:
+    branches:
+      - main
+      - master
   
 jobs:
   Explore-GitHub-Actions:
