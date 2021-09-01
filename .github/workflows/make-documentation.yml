@@ -1,0 +1,16 @@
+name: GitHub Actions Demo
+on: 
+  push:
+    branches:
+      - main
+      - master
+      
+  page_build
+  
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: make dirhtml
+      - run: cp -a _build/dirhtml/. ./docs
+      - run: make clean
