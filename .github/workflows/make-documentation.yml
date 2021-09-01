@@ -13,6 +13,7 @@ jobs:
   Make_Docs:
     runs-on: ubuntu-latest
     steps:
+      - run: ls
       - run: make dirhtml
       - run: cp -a _build/dirhtml/. ./docs
       - run: make clean
